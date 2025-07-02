@@ -2058,7 +2058,7 @@ app.get('/api/pageview', async (req, res) => {
 
 
 connectdb().then(() => {
-  server.listen(5000, () => {
+  server.listen(5000, '0.0.0.0', () => {
     console.log("🚀 Server + Socket.IO listening at http://localhost:5000");
   });
 });
